@@ -41,3 +41,5 @@ npm run preview
 Los cambios de paquetes, productos, gastos e importaciones se guardan en Supabase. La venta y la importación usan funciones SQL transaccionales para conservar inventario y evitar duplicados al reintentar una misma operación.
 
 La importación permite cargar `.xlsx` o `.csv`; la plantilla descargable de productos está en formato Excel. En gastos también está disponible la categoría **Pago al vendedor**.
+
+El color de marca se puede elegir entre negro (`#181818`), verde (`#32553E`) y blanco; la selección se conserva en el navegador.
