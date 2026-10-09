@@ -255,6 +255,13 @@ input:focus, textarea:focus, select:focus { border-color: #83ad8b; box-shadow: 0
 .stock-pill.empty-stock { color: #9a6964; background: #fbefee; }
 .row-actions { display: flex; align-items: center; justify-content: flex-end; }
 .product-form { padding: 18px; margin: -2px 0 14px; }
+.product-profit-banner { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 4px 12px; padding: 12px 14px; margin: 0 0 15px; border: 1px solid transparent; border-radius: 10px; }
+.product-profit-banner > span { font-size: 11px; font-weight: 700; }
+.product-profit-banner > strong { text-align: right; font-size: clamp(14px,2vw,19px); font-weight: 750; }
+.product-profit-banner > small { grid-column: 1 / -1; font-size: 9px; }
+.product-profit-banner.success { color: #286a42; background: #edf7ef; border-color: #d7e9da; }
+.product-profit-banner.danger { color: #9e4540; background: #fff1ef; border-color: #f7dbd8; }
+.product-profit-banner.neutral { color: #59615b; background: #f4f5f4; border-color: #e3e6e3; }
 .product-fields { grid-template-columns: repeat(4,minmax(0,1fr)); }
 .product-fields .span-two { grid-column: span 4; }
 .detail-columns { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 14px; align-items: start; }
