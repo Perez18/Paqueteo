@@ -2,6 +2,10 @@
 
 Aplicación web en español para organizar paquetes, productos, gastos, ventas e inventario. React y Vite forman la interfaz; Supabase Auth y Postgres guardan los datos y los aíslan por usuario.
 
+## Portal
+
+![Pantalla de inicio de sesión del portal](docs/portal-login.png)
+
 ## Requisitos
 
 - Node.js 20.19 o posterior.
@@ -35,3 +39,5 @@ npm run preview
 ```
 
 Los cambios de paquetes, productos, gastos e importaciones se guardan en Supabase. La venta y la importación usan funciones SQL transaccionales para conservar inventario y evitar duplicados al reintentar una misma operación.
+
+La importación permite cargar `.xlsx` o `.csv`; la plantilla descargable de productos está en formato Excel. En gastos también está disponible la categoría **Pago al vendedor**.
