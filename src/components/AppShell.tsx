@@ -24,7 +24,7 @@ export function AppShell() {
         </div>
       </aside>
       <main className="main-area">
-        <header className="mobile-header"><Link to="/" className="brand"><span className="brand-mark"><Box size={18} /></span>paqueteo</Link><nav className="mobile-links" aria-label="Navegación"><NavLink to="/" end>Resumen</NavLink><NavLink to="/packages">Paquetes</NavLink></nav><AccentThemePicker compact /><Link className="mobile-add" to="/packages/new" aria-label="Nuevo paquete"><Plus size={19} /></Link></header>
+        <header className="mobile-header"><Link to="/" className="brand"><span className="brand-mark"><Box size={18} /></span>paqueteo</Link><nav className="mobile-links" aria-label="Navegación"><NavLink to="/packages">Paquetes</NavLink></nav><AccentThemePicker compact /><Link className="mobile-add" to="/packages/new" aria-label="Nuevo paquete"><Plus size={19} /></Link><button className="mobile-logout" type="button" onClick={() => void signOut()} aria-label="Cerrar sesión" title="Cerrar sesión"><LogOut size={17} /></button></header>
         <div className="main-content"><Outlet /></div>
       </main>
     </div>
